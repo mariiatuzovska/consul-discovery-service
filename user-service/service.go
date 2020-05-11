@@ -9,13 +9,14 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 	"github.com/labstack/echo"
+	_ "github.com/mattn/go-sqlite3"
 	"github.com/urfave/cli"
 )
 
 var (
 	ServiceName       = "user-service"
 	Version           = "0.0.1"
-	DBFilePathSQLite3 = "./users.db"
+	DBFilePathSQLite3 = "./bin/users.db"
 )
 
 func main() {

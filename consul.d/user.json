@@ -1,0 +1,9 @@
+{
+    "service": {
+        "name": "user",
+        "port": 8181,
+        "connect": {
+            "sidecar_service": {}
+        }
+    }
+}
