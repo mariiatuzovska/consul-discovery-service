@@ -16,7 +16,7 @@ import (
 var (
 	ServiceName       = "user-service"
 	Version           = "0.0.1"
-	DBFilePathSQLite3 = "./bin/users.db"
+	DBFilePathSQLite3 = "./users.db"
 )
 
 func main() {
@@ -35,6 +35,7 @@ func main() {
 				if err != nil {
 					log.Fatal(err)
 				}
+				fmt.Println(fmt.Sprintf("%s:%s", c.String("host"), c.String("port")))
 				err = srv.Start(fmt.Sprintf("%s:%s", c.String("host"), c.String("port")))
 				if err != nil {
 					log.Fatal(err)

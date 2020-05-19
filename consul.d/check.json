@@ -1,0 +1,12 @@
+ {
+     "check": [{
+         "id": "dashboard_check",
+         "name": "Check User health 5001",
+         "service_id": "user",
+         "http": "http://localhost:8181/",
+         "method": "GET",
+         "interval": "10s",
+         "timeout": "1s",
+         "status": "passing"
+     }]
+ }
